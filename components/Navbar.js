@@ -81,7 +81,7 @@ export default function Navbar() {
                             className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-900 font-normal "
                             }`}
                         >   
-                            Accounts
+                            Account
                             {router.asPath === "/login" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"

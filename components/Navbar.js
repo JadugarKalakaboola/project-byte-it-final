@@ -104,7 +104,7 @@ export default function Navbar() {
                 </Link>
                 <Link href="/new">
                     <a className="text-base font-normal text-gray-900">
-                        What's New
+                        What&apos;s New
                     </a>
                 </Link>
                 <Link href="/Votes">

@@ -1,12 +1,10 @@
 import React from 'react'
 import ContainerBlock from '../components/ContainerBlock'
 
-const explore = () => {
+export default function New() {
   return (
     <ContainerBlock>
-      <div>explore</div>
+        <div>new</div>
     </ContainerBlock>
   )
 }
-
-export default explore

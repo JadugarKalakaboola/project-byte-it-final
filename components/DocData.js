@@ -5,18 +5,16 @@ export default function DocData(){
 
     console.log(data)
     return(
-        <div className="lg:grid grid-cols-3 gap-10 mx-auto w-9/12">
+        <div className="lg:grid grid-cols-3 mx-auto w-9/12 py-24">
             {data.map((doc) => {
                     return (
-                        <div key={doc.key} className="shadow-xl shadow-gray-300 rounded-lg py-5 px-7 font-Finlandica my-3 lg:my-0 cursor-pointer">
-                            <Link key={doc.key} href={doc.slug}>
+                        <div key={doc.key} style={{backgroundColor: `${doc.background}`}} className="py-5 px-7 font-Finlandica lg:my-0">
                                 <div className="">
                                     <img src={doc.image} alt='' />
                                     <p className="text-xl font-semibold">{doc.name}</p>
-                                    <p className="text-l font-bold">{doc.specialization}</p>
-                                    <p className="pt-7">{doc.description}</p>
+                                    <p className="text-l font-bold">{doc.description}</p>
+                                    <p className="pt-7">{doc.power}</p>
                                 </div>
-                            </Link>
                         </div>
                     )
                 })}

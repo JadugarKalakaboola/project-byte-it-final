@@ -71,13 +71,13 @@ export default function Navbar() {
                             )}
                         </a>
                     </Link>
-                    <Link href="/votes">
+                    <Link href="/story">
                         <a 
-                            className={`text-base  ${router.asPath === "/votes"? "text-gray-800 font-bold": "text-gray-900 font-normal "
+                            className={`text-base  ${router.asPath === "/story"? "text-gray-800 font-bold": "text-gray-900 font-normal "
                             }`}
                         >   
-                            Votes
-                            {router.asPath === "/votes" && (
+                           Story
+                            {router.asPath === "/story" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
@@ -107,9 +107,9 @@ export default function Navbar() {
                         What&apos;s New
                     </a>
                 </Link>
-                <Link href="/Votes">
+                <Link href="/story">
                     <a className="text-base font-normal text-gray-900">
-                        Votes
+                       Story
                     </a>
                 </Link>
             </div>

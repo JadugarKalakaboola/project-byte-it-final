@@ -1,51 +1,46 @@
 const data = [
     {
-        "name": "Dr. Nemo Ghosh",
         "key": 1,
-        "slug": "/appointments/nemo",
-        "specialization": "Otolaryngologists",
-        "description": "Has an experience of more than 15+ years. Treat diseases in the ears, nose, throat, sinuses, head, neck, and respiratory system",
-        "image": "https://cdn.discordapp.com/attachments/906388843933093908/1012036053072347226/unknown.png"
+        "name" : "CabRAGEsoup",
+        "description": "made with green freshly rotten cabagges, that has the power to turn you into HULK for 1 hour.",
+        "background": "#eb4034",
+        "power": "Rage"
     },
     {
-        "name": "Dr. SpywarePerseus Ghosh",
         "key": 2,
-        "slug": "/appointments/spyware",
-        "specialization": "Neurologist",
-        "description": "MBBS, experienced Neurologists with more than 100 surgeries done.",
-        "image": "https://cdn.discordapp.com/attachments/906388843933093908/1012036053072347226/unknown.png"
+        "name" : "Rapid Roll",
+        "description": "Get faster with each byte of crispy-cheezy vegetables roll. ",
+        "background": "#ebc934",
+        "power": "Super Speed"
     },
     {
-        "name": "Dr. Reyna Singh",
         "key": 3,
-        "slug": "/appointments/reyna",
-        "specialization": "Cardiologist",
-        "description": "expert Cardiologist, consult her for heart failure, a heart attack, high blood pressure, or an irregular heartbeat.",
-        "image": "https://cdn.discordapp.com/attachments/906388843933093908/1012036053072347226/unknown.png"
+        "name" : "Snapple Pie",
+        "description": "Just eat and snap, Then look where you are, works like an anywhere door indeed.",
+        "background": "#b734eb",
+        "power": "Teleportation"
+
     },
     {
-        "name": "Dr. Cloud Sharma",
         "key": 4,
-        "slug": "/appointments/cloud",
-        "specialization": "pediatrician",
-        "description": "Child specialist, contact him for children below 12 years.",
-        "image": "https://cdn.discordapp.com/attachments/906388843933093908/1012036053072347226/unknown.png"
+        "name" : "Pizzard",
+        "description": "Topped with olives, tomatoes and everything normal, It's secret ingredient are the potions of wizards.",
+        "background": "#83eb34",
+        "power": "Magic"
     },
     {
-        "name": "Dr. IcyStun",
         "key": 5,
-        "slug": "/appointments/icystun",
-        "specialization": "Physicians",
-        "description": "For general diseases like flu, fever, immunization, diabetes etc.",
-        "image": "https://cdn.discordapp.com/attachments/906388843933093908/1012036053072347226/unknown.png"
+        "name" : "Choco Drowny",
+        "description": "Secretly stolen from The Willy Wonka factory. Drowny but does not let you drown.",
+        "background": "#34e2eb",
+        "power": "Float"
     },
     {
-        "name": "Dr. Strange Sharma",
         "key": 6,
-        "slug": "/appointments/strange",
-        "specialization": "Endocrinologist",
-        "description": "Expert on hormones and metabolism, can treat conditions like diabetes, thyroid problems, and calcium and bone disorders",
-        "image": "https://cdn.discordapp.com/attachments/906388843933093908/1012036053072347226/unknown.png"
+        "name" : "Rawrior",
+        "description": "Do not under estimate the power of a RAW, just RAW vegetable Salad.",
+        "background": "#eb8934",
+        "power": "Combat++"
     }
 ]
 

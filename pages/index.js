@@ -15,12 +15,12 @@ export default function Home() {
       <ContainerBlock>
 
         <div className='py-20 bg-[#E4F0D8]'>
-          <div className='flex lg:w-8/12 w-11/12 mx-auto '>
-            <div className='lg:w-6/12'>
-              <p className='text-6xl font-Bungee text-yellow-500'>Food for a good mood</p>
+          <div className='flex lg:w-8/12 w-11/12 mx-auto justify-between'>
+            <div className='lg:w-5/12'>
+              <p className='text-8xl font-bold font-Finlandica text-yellow-500'>FOOD FOR A GOOD MOOD</p>
             </div>
             <div className='lg:w-6/12 flex justify-end'>
-              <img src='./packet.png' className=''/>
+              <img src='./landing-images.png' className=''/>
             </div>
           </div>
         </div>

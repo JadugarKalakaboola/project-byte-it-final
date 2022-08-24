@@ -1,14 +1,14 @@
 import ContainerBlock from "../components/ContainerBlock"
 import { app } from "../firebaseConfig";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
-import { useRouter } from "next/router";
+import { useRouter as UseRouter } from "next/router";
 import React, { useEffect as UseEffect, useState as UseState } from 'react'
 
 function login() {
     const [token, setToken] = UseState("")
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider()
-    const router = useRouter()
+    const router = UseRouter()
 
     const signUpWithGoogle = () => {
         signInWithPopup(auth, googleProvider)

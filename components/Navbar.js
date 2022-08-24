@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect as UseEffect, useState as UseState } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { useRouter } from 'next/router';
@@ -7,11 +7,16 @@ import { useRouter } from 'next/router';
 export default function Navbar() {
     const router = useRouter();
     const {theme, setTheme} = useTheme();
-    const [mounted, setMounted] = useState(false);
+    const [mounted, setMounted] = UseState(false);
+    const [token, setToken] = UseState("")
 
-    useEffect(() => {
+    UseEffect(() => {
         setMounted(true);
     }, []);
+
+    UseEffect(() => {
+        setToken(sessionStorage.getItem('Token'))
+    }, [])
 
     return (
         <div className="max-w-6xl mx-auto px-4 md:py-20">
@@ -71,6 +76,51 @@ export default function Navbar() {
                             )}
                         </a>
                     </Link>
+                    {token ? (<Link href="/login">
+                        <a 
+                            className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-200 font-normal "
+                            }`}
+                        >   
+                            Account
+                            {router.asPath === "/login" && (
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-arrow-down inline-block h-3 w-3"
+                                viewBox="0 0 16 16"
+                                >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                                />
+                                </svg>
+                            )}
+                        </a>
+                    </Link>) : (<Link href="/login">
+                        <a 
+                            className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-200 font-normal "
+                            }`}
+                        >   
+                            Login
+                            {router.asPath === "/login" && (
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-arrow-down inline-block h-3 w-3"
+                                viewBox="0 0 16 16"
+                                >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                                />
+                                </svg>
+                            )}
+                        </a>
+                    </Link>)}
                     <Link href="/Creators">
                         <a 
                             className={`text-base  ${router.asPath === "/Creators"? "text-gray-800 font-bold": "text-gray-200 font-normal "

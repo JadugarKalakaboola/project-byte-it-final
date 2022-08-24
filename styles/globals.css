@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.green-bg{
+    background: rgb(157,236,148);
+    background: linear-gradient(186deg, rgba(157,236,148,1) 0%, rgba(40,164,40,1) 99%, rgba(34,237,132,1) 100%);
+}

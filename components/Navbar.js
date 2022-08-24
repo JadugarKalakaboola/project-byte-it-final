@@ -19,12 +19,12 @@ export default function Navbar() {
     }, [])
 
     return (
-        <div className="max-w-6xl mx-auto px-4 md:py-20">
+        <div className="max-w-6xl mx-auto px-4 md:py-5">
             <div className="flex md:flex-row justify-between items-center">
                 <div className="flex flex-col">
                     <Link href="/">
-                        <a>
-                            <img src='./logo.png' className='w-32 mx-auto'/> 
+                        <a className=''>
+                            <img src='./logo.png' className='w-28'/> 
                         </a>
                     </Link>
                 </div>
@@ -32,7 +32,7 @@ export default function Navbar() {
                 <div className="space-x-8 hidden md:block">
                     <Link href="/explore">
                         <a 
-                            className={`text-base  ${router.asPath === "/explore"? "text-gray-800 font-bold font-Finlandica": "text-gray-200 font-normal font-Finlandica"
+                            className={`text-base  ${router.asPath === "/explore"? "text-gray-800 font-bold font-Finlandica": "text-gray-900 font-normal font-Finlandica"
                             }`}
                         >   
                             Explore{" "}
@@ -55,10 +55,10 @@ export default function Navbar() {
                     </Link>
                     <Link href="/new">
                         <a 
-                            className={`text-base  ${router.asPath === "/new"? "text-gray-800 font-bold font-Finlandica": "text-gray-200  font-normalfont-Finlandica "
+                            className={`text-base  ${router.asPath === "/new"? "text-gray-800 font-bold font-Finlandica": "text-gray-900  font-normalfont-Finlandica "
                             }`}
                         >   
-                            What's New
+                            What&apos;s New
                             {router.asPath === "/new" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -78,10 +78,10 @@ export default function Navbar() {
                     </Link>
                     {token ? (<Link href="/login">
                         <a 
-                            className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-200 font-normal "
+                            className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-900 font-normal "
                             }`}
                         >   
-                            Account
+                            Accounts
                             {router.asPath === "/login" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export default function Navbar() {
                         </a>
                     </Link>) : (<Link href="/login">
                         <a 
-                            className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-200 font-normal "
+                            className={`text-base  ${router.asPath === "/login"? "text-gray-800 font-bold": "text-gray-900 font-normal "
                             }`}
                         >   
                             Login
@@ -121,13 +121,13 @@ export default function Navbar() {
                             )}
                         </a>
                     </Link>)}
-                    <Link href="/Creators">
+                    <Link href="/votes">
                         <a 
-                            className={`text-base  ${router.asPath === "/Creators"? "text-gray-800 font-bold": "text-gray-200 font-normal "
+                            className={`text-base  ${router.asPath === "/votes"? "text-gray-800 font-bold": "text-gray-900 font-normal "
                             }`}
                         >   
-                            Creators
-                            {router.asPath === "/Creators" && (
+                            Votes
+                            {router.asPath === "/votes" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
@@ -146,25 +146,20 @@ export default function Navbar() {
                     </Link>
                 </div>
             </div>
-            <div className="space-x-8 block md:hidden mt-4">
+            <div className="space-x-8 block md:hidden mt-4 text-center">
                 <Link href="/explore">
-                    <a className="text-base font-normal text-gray-200 dark:text-gray-300">
-                        explore
+                    <a className="text-base font-normal text-gray-900">
+                        Explore
                     </a>
                 </Link>
-                <Link href="/Creators">
-                    <a className="text-base font-normal text-gray-200 dark:text-gray-300">
-                        Creators
+                <Link href="/new">
+                    <a className="text-base font-normal text-gray-900">
+                        What&apos;s New
                     </a>
                 </Link>
-                <Link href="/login">
-                    <a className="text-base font-normal text-gray-200 dark:text-gray-300">
-                        Login
-                    </a>
-                </Link>
-                <Link href="/signup">
-                    <a className="text-base font-normal text-gray-200 dark:text-gray-300">
-                        signup
+                <Link href="/Votes">
+                    <a className="text-base font-normal text-gray-900">
+                        Votes
                     </a>
                 </Link>
             </div>

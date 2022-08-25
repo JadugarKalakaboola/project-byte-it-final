@@ -23,7 +23,7 @@ export default function Story() {
             </div>
             <div className='story 1 lg:flex lg:w-9/12 w-11/12 mx-auto bg-[#e4e7a8] rounded-lg'>
               <div className='lg:flex w-8/12 mx-auto'>
-                <img src='../random.png' className='w-60'/>
+                <img src='../hulk.png' style={{width: "125px"}}/>
                 <p className='py-10'>No way... Gamma Radiation is just a theory, <span className='text-green-800 font-bold'>HULK</span> eats our cabRAGE soup every morning.</p>
               </div>
             </div>

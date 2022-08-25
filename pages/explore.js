@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 
 const explore = () => {
   return (
-      <div className='pb-[5rem] bg-[#DCC3C3]'>
+      <div className='bg-[#DCC3C3]'>
         <Navbar />
         <DocData />
         <Footer />

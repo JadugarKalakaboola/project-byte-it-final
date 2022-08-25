@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function ContainerBlock({ children }){
     return(
         <div className="w-screen bg-[#E4F0D8]">
-            <div className="">
+            <div className="overflow-x-hidden">
                 <Navbar />
                 { children }
                 <Footer />

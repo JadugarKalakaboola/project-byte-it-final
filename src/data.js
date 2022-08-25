@@ -1,22 +1,22 @@
 const data = [
     {
         "key": 1,
-        "name" : "CabRAGEsoup",
-        "description": "made with green freshly rotten cabagges, that has the power to turn you into HULK for 1 hour.",
+        "name" : "CabRAGE Soup",
+        "description": "Made with green freshly rotten cabagges, that has the power to turn you to HULK for 1 hour straight.",
         "background": "#eb4034",
         "power": "Rage"
     },
     {
         "key": 2,
         "name" : "Rapid Roll",
-        "description": "Get faster with each byte of crispy-cheezy vegetables roll. ",
+        "description": "Get faster with each byte of this crispy-cheezy vegetables roll. ",
         "background": "#ebc934",
         "power": "Super Speed"
     },
     {
         "key": 3,
         "name" : "Snapple Pie",
-        "description": "Just eat and snap, Then look where you are, works like an anywhere door indeed.",
+        "description": "Just eat, snap and look where you are, works like an anywhere door indeed.",
         "background": "#b734eb",
         "power": "Teleportation"
 
@@ -38,10 +38,32 @@ const data = [
     {
         "key": 6,
         "name" : "Rawrior",
-        "description": "Do not under estimate the power of a RAW, just RAW vegetable Salad.",
+        "description": "Do not under estimate the power of a RAW, just RAW vegetable salad.",
         "background": "#eb8934",
         "power": "Combat++"
+    },
+    {
+        "key": 7,
+        "name" : "HopDog",
+        "description": "Sausage and a bun that is described as a perfect taste level of sweetness, beef, salt, garlic and light flavoring.",
+        "background": "#cd51d6",
+        "power": "High Jump"
+    },
+    {
+        "key": 8,
+        "name" : "Screen Tea",
+        "description": "Inspired by Indian Masala Chai, just a much healthier and a safe way.",
+        "background": "#e36f9e",
+        "power": "Detect Danger"
+    },
+    {
+        "key": 9,
+        "name" : "Guesotto",
+        "description": "Exotic dish prepared with rice. Gets its golden color and soft texture from saffron.",
+        "background": "#cae36f",
+        "power": "Telepathy"
     }
+
 ]
 
 export default data;

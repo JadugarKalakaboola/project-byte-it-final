@@ -76,7 +76,7 @@ export default function Navbar() {
                             className={`text-base  ${router.asPath === "/story"? "text-gray-800 font-bold": "text-gray-900 font-normal "
                             }`}
                         >   
-                           Story
+                           Customer Stories
                             {router.asPath === "/story" && (
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ export default function Navbar() {
                 </Link>
                 <Link href="/story">
                     <a className="text-base font-normal text-gray-900">
-                       Story
+                       Customer Stories
                     </a>
                 </Link>
             </div>

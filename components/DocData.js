@@ -9,7 +9,7 @@ export default function DocData(){
             {data.map((doc) => {
                     return (
                         <div key={doc.key} style={{backgroundColor: `${doc.background}`}} className="py-5 px-7 font-Finlandica lg:my-0">
-                                <div className="">
+                                <div className="hover:scale-110 ease-in-out transition-all">
                                     <img src={doc.image} alt='' />
                                     <p className="text-xl font-semibold">{doc.name}</p>
                                     <p className="text-l font-bold">{doc.description}</p>
